@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=aboreto">
+
+
+    <style>
+
+        .max-width{
+            height: 80vh;
+        }
+        body{
+            font-family: "aboreto", sans-serif;
+        }
+
+        
+        section::before{
+            background: url('appoint2.jpg') no-repeat center center/cover;
+            opacity: 0.8;
+            background-color: #111;
+
+        }
+
+        .navbar{
+            background-color: transparent;
+        }
+
+        .navbar .logo{
+            position: relative;
+            left: 20px;
+        }
+        .navbar .logo img{
+            height: 25px;
+            width: 50px;
+            
+        }
+
+        /* .navbar .logo .invert_color{
+            filter: invert(100%);
+        } */
+
+        form .logo{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            position: relative;
+            opacity: 1;
+            /* left: 20px; */
+        }
+        form .logo img{
+            height: 70px;
+            width: 150px;
+            
+        }
+
+        form .logo .invert_color{
+            filter: invert(100%);
+        }
+
+
+        .heading1{
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+            margin-left: 2%;
+            margin-top: 1vh;
+            color: #fff;
+            padding: 20px 30px;
+        }
+
+        .max-width{
+            display: flex;
+            flex-direction: row;
+            background: url('appoint1.jpg') no-repeat center center/cover;
+            margin-left: 5%;
+            margin-top: 2%;
+            width: 90%;
+            /* border: 3px solid #111; */
+            border-radius: 50px;
+            box-shadow: 8px 8px 37px rgb(0, 0, 0);
+
+        }
+
+        .text10{
+            width: 45%;
+            margin-left: 3%;
+            margin-top: 5%;
+            color: #fff;
+            font-size: 70px;
+            font-weight: 600;
+            padding: 30px 20px;
+            text-shadow: 8px 8px 37px rgb(228, 225, 225);
+
+        }
+
+        .text10 span{
+            color: orangered;
+            -webkit-text-stroke: 1px yellow;
+            text-shadow: 1px 1px 15px rgb(241, 221, 2);
+
+        }
+
+        .appoint-content{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 10%;
+        }
+
+        .box{
+            /* position: relative; */
+            align-items: center;
+            margin-top: 30px;
+            background-color: rgb(16, 16, 16);
+            height: 72vh;
+            width: 100%;
+            /* margin-left: 130px; */
+            /* background-color: rgb(139, 136, 136); */
+            border-radius: 50px;
+            /* box-shadow: 2px 2px 47px rgb(254, 252, 252); */
+            opacity: 0.8;
+
+
+        }
+
+        form{
+            color: #fff;
+        }
+
+        form .fname,.lname{
+            /* background-color: #111; */
+            color: #111;
+            margin: 10px 13px;
+            height: 40px;
+            width: 200px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 100px;
+            border: none;
+            outline: none;
+            opacity: 1;
+            /* box-shadow: 2px 2px 1px rgb(191, 188, 188); */
+        }
+
+        form .mail,.mobno{
+            /* background-color: #111; */
+            color: #111;
+            margin: 10px 15px;
+            height: 40px;
+            width: 430px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 100px;
+            border: none;
+            outline: none;
+            opacity: 1;
+            /* box-shadow: 2px 2px 17px rgb(191, 188, 188); */
+        }
+
+        form p{
+            font-size: 25px;
+            font-weight: 500;
+            color: #111;
+            text-align: center;
+            opacity: 1;
+        }
+
+        form .time{
+            /* background-color: #111; */
+            color: #111;
+            margin: 25px 15px;
+            height: 40px;
+            width: 430px;
+            text-align: center;
+            font-size: 15px;
+            border-radius: 100px;
+            outline: none;
+            opacity: 1;
+            /* box-shadow: 2px 2px 17px rgb(191, 188, 188); */
+        }
+
+        ::placeholder{
+            color: #111;
+        }
+
+        .submit{
+            padding-top: 7px;
+            margin: 8px auto;
+            height: 40px;
+            width: 100px;
+            text-align: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: 500;
+            color: #111;
+            background-color: #fff;
+            border: 2px solid #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .submit a{
+            color: #111;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .submit:hover{
+            background-color: transparent;
+            color: #fff;
+        }
+        .submit:hover a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img class="invert_color1" src="arrow.png"></a>
+        </div>
+
+        <ul class="list">
+            <!-- <li class="menu-btn"><a href="index.html">HOME</a></li> -->
+            <!-- <li class="menu-btn"><a href="#about">ABOUT</a></li>
+            <li class="menu-btn"><a href="#events">EVENTS</a></li>
+            <li class="menu-btn"><a href="#gallery">GALLERY</a></li>
+            <li class="menu-btn"><a href="#contact">CONTACT US</a></li> -->
+        </ul>
+
+        <!-- <div class="appoint">BMI CALCULATOR</div> -->
+    </nav>
+
+    <section class="appoint">
+        <div class="max-width">
+            <div class="text10">You don’t <br>know your limits,<br> <span>until</span> you push yourself<br> past them.</div>
+            <div class="appoint-content">
+                <div class="box">
+                    <form action="#" class="appoint-data" id="form">
+                        <div class="logo">
+                            <a href="index.html"><img class="invert_color" src="logo.png"></a>
+                        </div>
+                        <div class="heading1"><i>APPOINTMENT</i></div>
+                        <input class = "fname" type="text" id="fname" placeholder="First Name" required>
+                        <input class = "lname" type="text" id="lname" placeholder="Last Name" required><br>
+                        <input type="email" class="mail" id="text" placeholder="Your E-mail" required><br>
+                        <input type="number" class="mobno" id="mobno" placeholder="Mobile Number" required><br>
+                        <p>Timing:</p>
+                        <select name="time" id="timing" class="time" required>
+                            <option value="9:00 AM - 11:00 AM">9:00 AM - 11:00 AM</option>
+                            <option value="11:00 AM - 1:00 PM">11:00 AM - 1:00 PM</option>
+                            <option value="1:00 PM - 3:00 PM">1:00 PM - 3:00 PM</option>
+                            <option value="3:00 PM - 5:00 PM">3:00 PM - 5:00 PM</option>
+                            <option value="5:00 PM - 7:00 PM">5:00 PM - 7:00 PM</option>
+                        </select>
+
+                        <div class="submit" onclick=store()><a href="#">Submit</a></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+
+        function store(){
+
+            const form = document.getElementById('form');
+            
+
+            let fname = document.getElementById('fname').value;
+            let lname = document.getElementById('lname').value;
+            let mail = document.getElementById('text').value;
+            let mobno = document.getElementById('mobno').value;
+            let time = document.getElementById('timing').value;
+            
+
+                console.log(fname);
+                console.log(lname);
+                console.log(mail);
+                console.log(mobno);
+                console.log(time);
+
+
+                fetch('https://jsonplaceholder.typicode.com/posts', {
+                method: 'POST',
+                body: JSON.stringify({
+                    fname: fname,
+                    lname: lname,
+                    email: mail,
+                    mobno: mobno,
+                    time: time
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+                })
+                .then(function(response){
+                    return response.json()
+                })
+                .then(function(data){
+                    console.log(data)
+                })
+
+                const confrm = confirm(`Are you sure your data is correct:
+                Name: ${fname} ${lname}
+                E-mail: ${mail}
+                Mobile No.: ${mobno}
+                Time Slot: ${time}`)
+
+                console.log(confrm);
+                if(confrm){
+                    alert("Your appintment has been booked successfully!!!");
+                    document.getElementById('form').reset();
+                }
+
+
+
+
+        }
+
+
+                
+            
+
+
+
+    </script>
+
+</body>
+</html>
